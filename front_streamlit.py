@@ -25,7 +25,7 @@ SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
     temperature=0.2,
-    convert_system_message_to_human=True  # ✅ Required to avoid SystemMessage error
+    convert_system_message_to_human=True 
 )
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
@@ -134,7 +134,7 @@ Summarized user preferences and key context:
 
 # Streamlit UI
 st.set_page_config(page_title="City Relocation Chatbot", page_icon="🌆")
-st.title("🌆 City Relocation Chatbot")
+st.title("City Relocation Chatbot")
 st.caption("Get help finding your ideal city — job market, housing, lifestyle, and more!")
 
 user_input = st.chat_input("Ask me about cities, lifestyle, job prospects, or trends...")
@@ -143,7 +143,7 @@ if user_input:
     st.session_state.chat_history.append({"role": "user", "text": user_input})
 
     if needs_web_search(user_input):
-        with st.spinner("🔍 Searching the web with your preferences..."):
+        with st.spinner("Searching the web with your preferences..."):
             # Step 1: Rewrite search query with context
             enriched_query = rewrite_search_prompt(user_input, st.session_state.summary)
 
