@@ -2,11 +2,11 @@ import os
 import requests
 import streamlit as st
 from dotenv import load_dotenv
+from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
-from pinecone import Pinecone
-from langchain.vectorstores import Pinecone as PineconeVectorStore
+from pinecone import Pinecone as PineconeClient
 from langchain.schema.messages import HumanMessage
 from langchain.prompts import PromptTemplate
 from typing import List
@@ -26,7 +26,7 @@ llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
 # Pinecone vector store
-pinecone = Pinecone(api_key=PINECONE_API_KEY)
+pinecone = PineconeClient(api_key=PINECONE_API_KEY)
 index = pinecone.Index(PINECONE_INDEX_NAME)
 vectorstore = PineconeVectorStore(index=index, embedding=embeddings, text_key="text")
 
