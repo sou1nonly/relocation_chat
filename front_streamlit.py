@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
-from pinecone import Pinecone as PineconeClient
+from pinecone import Pinecone as pinecone
 from langchain.vectorstores import Pinecone as PineconeVectorStore
 from langchain.schema.messages import HumanMessage
 from langchain.prompts import PromptTemplate
