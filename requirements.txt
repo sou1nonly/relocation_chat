@@ -6,3 +6,4 @@ langchain-google-genai
 langchain-community
 pinecone
 protobuf<4.0.0
+setuptools==65.5.0
