@@ -15,11 +15,11 @@ Features
 Project Structure
 ---------------------
 city-relocation-chatbot/
-│
-├── front_streamlit.py      # Main Streamlit app 
-├── backend.py              # logical CLI implementation
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+
+- front_streamlit.py      # Main Streamlit app 
+- backend.py              # logical CLI implementation
+- requirements.txt        # Python dependencies
+- README.md               # Project documentation
 
 
 Create `.env` file (if want to run locally)
