@@ -22,7 +22,11 @@ PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 
 # LLM and embeddings
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
+llm = ChatGoogleGenerativeAI(
+    model="gemini-1.5-flash",
+    temperature=0.2,
+    convert_system_message_to_human=True  # ✅ Required to avoid SystemMessage error
+)
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
 # Pinecone vector store
