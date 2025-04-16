@@ -3,4 +3,4 @@ python-dotenv
 requests
 langchain>=0.1.14
 langchain-google-genai
-pinecone-client>=3.0.0
+pinecone>=3.0.0
