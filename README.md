@@ -25,10 +25,10 @@ city-relocation-chatbot/
 Create `.env` file (if want to run locally)
 Add the following in a `.env` file at the root of the project:
 
-GOOGLE_API_KEY=your_google_generative_ai_api_key
-PINECONE_API_KEY=your_pinecone_api_key
-PINECONE_INDEX_NAME=your_pinecone_index_name
-SERPER_API_KEY=your_serper_api_key
+GOOGLE_API_KEY=your_google_generative_ai_api_key  
+PINECONE_API_KEY=your_pinecone_api_key  
+PINECONE_INDEX_NAME=your_pinecone_index_name  
+SERPER_API_KEY=your_serper_api_key  
 
 Built With
 --------------
