@@ -1,5 +1,7 @@
-🌆 City Relocation Chatbot
+🌆 City Relocation Chatbot 
 ===========================
+
+https://relocationchat-jb7hdmvnvesiqcev36efwy.streamlit.app/
 
 An AI-powered chatbot to help users find their ideal city for relocation based on personal preferences like job opportunities, lifestyle, housing, cost of living, climate, and more. It intelligently remembers previous interactions, pulls real-time web search results, and uses vector search to provide meaningful and personalized responses.
 
