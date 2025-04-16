@@ -1,6 +1,6 @@
 streamlit
 python-dotenv
 requests
-pinecone-client
-langchain
+langchain>=0.1.14
 langchain-google-genai
+pinecone-client>=3.0.0
